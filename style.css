@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main {
+    width: 950px;
+    height: 648px;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 350%;
+    color: hsl(234, 29%, 20%);
+}
+
+li {
+    list-style: none;
+    line-height: 2;
+}
+
+li img {
+    margin-right: 16px;
+    transform: translateY(5px);
+}
+
+p {
+    line-height: 1.5;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 460px;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+#emailForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.labelContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#emailForm label {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#emailError {
+    font-weight: 700;
+    font-size: 12px;
+    color: hsl(4, 100%, 67%);
+}
+
+.error {
+    color: hsl(4, 100%, 67%);
+    background-color: hsla(4, 86%, 86%, 0.384);
+    border-color: hsl(4, 100%, 67%);
+    outline: none;
+}
+
+#email.error:focus {
+    border: 1px solid hsl(4, 100%, 67%);
+}
+
+input {
+    padding: 18px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 10px;
+    font: inherit;
+    margin-bottom: 20px;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    padding: 20px;
+    font: inherit;
+
+    font-weight: 600;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #FF527B, hsl(4, 100%, 67%));
+    cursor: pointer;
+    -webkit-box-shadow: 7px 5px 34px -11px hsl(4, 100%, 67%);
+    -moz-box-shadow: 7px 5px 34px -11px hsl(4, 100%, 67%);
+    box-shadow: 7px 5px 34px -11px hsl(4, 100%, 67%);
+}
+
+.right img {
+    margin-top: 5px;
+}
+
+.success {
+    background-color: white;
+    width: 470px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px 65px 60px;
+}
+
+.success img {
+    width: 65px;
+}
+
+.success h1 {
+    line-height: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.dark-slate-grey {
+    color: hsl(234, 29%, 20%);
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 951px) {
+    body {
+        background-color: #fff;
+    }
+
+    main {
+        flex-direction: column;
+        min-width: 375px;
+    }
+
+    .left {
+        order: 2;
+    }
+
+    .right {
+        order: 1;
+    }
+}
