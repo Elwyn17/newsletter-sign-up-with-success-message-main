@@ -59,7 +59,7 @@ p {
 #emailForm {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .labelContainer {
@@ -96,7 +96,7 @@ input {
     border: 1px solid hsl(231, 7%, 60%);
     border-radius: 10px;
     font: inherit;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
 }
 
 input:hover {
@@ -122,7 +122,7 @@ button:hover {
     box-shadow: 7px 5px 34px -11px hsl(4, 100%, 67%);
 }
 
-.right img {
+.right picture img {
     margin-top: 5px;
 }
 
@@ -166,14 +166,59 @@ button:hover {
 
     main {
         flex-direction: column;
-        min-width: 375px;
+        max-width: 375px;
+        top: 294px;
+        gap: 0px;
     }
 
     .left {
         order: 2;
+        max-width: 100%;
+        margin-left: 1px;
+        margin-top: 30px;
+    }
+
+    .mobd-change {
+        padding-left: 36px;
     }
 
     .right {
         order: 1;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    ul li{
+        line-height: 1.5;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        margin-bottom: 10px;
+    }
+
+    .success {
+        width: 375px;
+        height: 100vh;
+        padding: 156px 23px 0px;
+    }
+
+    .success h1 {
+        margin-top: -280px;
+    }
+
+    .success p {
+        margin-top: -320px;
+    }
+
+    .success button {
+        margin-bottom: 40px;
     }
 }
